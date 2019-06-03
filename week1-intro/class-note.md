@@ -25,9 +25,10 @@
 
 
 #### 上课视频
-[week1-intro-1plan](https://www.jianguoyun.com/p/DTY9Z_UQ1YDIBxjo-sUB)
-[week1-intro-2github](https://www.jianguoyun.com/p/DcKtjrEQ1YDIBxjn-sUB)
-[week1-intro-3jupyter](https://www.jianguoyun.com/p/De9RMscQ1YDIBxji-sUB)
+1. [week1-intro-1plan](https://www.jianguoyun.com/p/DTY9Z_UQ1YDIBxjo-sUB)
+2. [week1-intro-2github](https://www.jianguoyun.com/p/DcKtjrEQ1YDIBxjn-sUB)
+3. [week1-intro-3jupyter](https://www.jianguoyun.com/p/De9RMscQ1YDIBxji-sUB)
+
 注册坚果云后下载
 
 
