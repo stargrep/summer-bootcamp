@@ -25,6 +25,10 @@
 
 
 #### 上课视频
+[week1-intro-1plan](https://www.jianguoyun.com/p/DTY9Z_UQ1YDIBxjo-sUB)
+[week1-intro-2github](https://www.jianguoyun.com/p/DcKtjrEQ1YDIBxjn-sUB)
+[week1-intro-3jupyter](https://www.jianguoyun.com/p/De9RMscQ1YDIBxji-sUB)
+注册坚果云后下载
 
 
 #### 复习材料 (基础材料必看，进阶材料选看）
