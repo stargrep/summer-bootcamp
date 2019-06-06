@@ -1,6 +1,8 @@
 # summer-boot-camp
 
-This is a dummy change by me! 
+This is a dummy change by me!
+
+This is 2nd change!  
 
 ## Study Plan
 * topic 1 - introduction
