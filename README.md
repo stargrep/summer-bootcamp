@@ -1,5 +1,7 @@
 # summer-boot-camp
 
+This is a dummy change by me! 
+
 ## Study Plan
 * topic 1 - introduction
 * topic 2 - study tools, linux and more
