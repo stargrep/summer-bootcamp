@@ -1,6 +1,6 @@
 def fibonacci(index):
     """
-    fibonacci implementation in python, use iteration.
+    fibonacci implementation in python, use recursion.
     (0), 1, 1, 2, 3, 5, 8, 13, 21, 34
     index 0 -> 0
     index 1 -> 1
