@@ -1,6 +1,28 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# #### 1. fibonacci 
+# Get the n-th fibonacci number
+
+# In[26]:
+
+
+def fibonacci(n): 
+    if n<0: 
+        print("Invalid value") 
+    # First Fibonacci number is 0 
+    elif n==1: 
+        return 0
+    # Second Fibonacci number is 1 
+    elif n==2: 
+        return 1
+    else: 
+        return fibonacci(n-1)+fibonacci(n-2) 
+  
+
+fibonacci(5)
+
+
 # #### 2. find-first-and-last 
 # Write a program that takes a list of numbers (for example, a = [5, 10, 15, 25, 35], return [5, 35]) and makes a new list of only the first and last elements of the given list. For practice, write this code inside a function.
 
@@ -11,6 +33,31 @@ def find_first_and_last(arr):
     return [arr[0], arr[-1]]
 
 find_first_and_last([5, 10, 15, 25, 35])
+
+
+# #### 3. filter-only-even 
+# Given a list saved in a variable: a = [1, 4, 9, 64, 81, 100] and return [4, 64, 100] Write program that takes this list a and makes a new list that has only the even elements of this list in it.
+
+# In[41]:
+
+
+import functools 
+
+# solution 1
+a = [1, 4, 9, 64, 81, 100] 
+b = list(filter(lambda x: x % 2 == 0, a))
+print("solution 1: ", b)
+
+# solution 2
+def even_filter(a):
+    b = []
+    for num in a:
+        if num % 2 == 0:
+            b.append(num)
+    return b
+
+b = even_filter(a)
+print("solution 2: ", b)
 
 
 # #### 4. leap-year 
@@ -29,6 +76,33 @@ print(is_leap_year(0) == True)
 print(is_leap_year(1996) == True)
 print(is_leap_year(2000) == True)
 print(is_leap_year(2100) == False)
+
+
+# #### 5. Reverse string
+# Write a program that asks the user for a long string containing multiple words. Print back to the user the same string, except with the words in backwards order. For example, say I type the string:
+# 
+# My name is Mike
+# 
+# Then I would see the string:
+# 
+# Mike is name My
+# 
+# shown back to me.
+
+# In[57]:
+
+
+a = 'My name is Mike'
+
+# solution 1
+temp = a.split()
+temp.reverse()
+b = ' '.join(temp)
+print("solution 1: ", b)
+
+# solution 2
+b = ' '.join(a.split()[::-1])
+print("solution 2: ", b)
 
 
 # #### 6. buy-and-sell 
@@ -67,6 +141,38 @@ print(buy_and_sell([7, 1, 6, 4, 5, 3]) == 5)
 print(buy_and_sell([7, 4, 3, 2]) == 0)
 
 
+# #### 7. sting-contains 
+# Write a function that takes sorted string with only numbers and find if a number (from 0 to 9) is in it. Example: string_contains("13589", 7) -> False string_contains("00233", 0) -> True
+
+# In[80]:
+
+
+def string_contains_1(s, target):
+    for c in s:
+        if c == str(target):
+            return True
+    return False
+
+def string_contains_2(s, target):
+    for c in s:
+        if int(c) == target:
+            return True
+    return False
+
+import re
+def string_contains_3(s, target):
+    return re.search("[%d]" % target, s) != None
+
+print(string_contains_1("13589", 7))
+print(string_contains_1("00233", 0))
+
+print(string_contains_2("13589", 7))
+print(string_contains_2("00233", 0))
+
+print(string_contains_3("13589", 7))
+print(string_contains_3("00233", 0))
+
+
 # #### 8. strong-password 
 # Write a strong password generator function in Python. Be creative with how you generate passwords - strong passwords have a mix of lowercase letters, uppercase letters, numbers, and symbols. The passwords should be random, generating a new password every time the user asks for a new password.
 
@@ -74,12 +180,15 @@ print(buy_and_sell([7, 4, 3, 2]) == 0)
 
 
 def gen_psd():
-    # this import is not recommended! ONLY FOR DEMO PURPOSE.
-    # most of the time you may want the import at the begining of the module file.
-    from random import randint
-    # ascii code on the keyboard 94 keys total, no space and DEL
-    symbols = list("~`!@#$%^&*()-=_+[]\{}|;':\",./<>?")
-    return "" + chr(randint(65, 90)) + chr(randint(97, 122))             + chr(randint(48, 57)) + symbols[randint(0, 31)]
+    # use string and random pkg
+    import random
+    import string
+    return "".join(
+            random.sample(string.ascii_lowercase, 1) + \
+            random.sample(string.ascii_uppercase, 1) + \
+            random.sample(string.digits, 1) + \
+            random.sample(string.punctuation, 1) \
+        )
 
 
 # check_psd is to check if a password string is strong.

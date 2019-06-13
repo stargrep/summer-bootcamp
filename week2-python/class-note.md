@@ -30,4 +30,9 @@
 
 
 #### 作业
-[TODO]
+参考第一周作业的完成方式，本周问题在：
+
+summer-bootcamp/week2-python/homework/week2-questions.ipynb
+
+
+同学们请自己建立子文件夹copy题目进一个新建的notebook.
