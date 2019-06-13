@@ -7,7 +7,7 @@
 
 1. [week2-python-1basic](https://www.jianguoyun.com/p/DQhf8SYQ1YDIBxjJoMgB)
 2. [week2-python-2advanced](https://www.jianguoyun.com/p/Db9XELgQ1YDIBxjXoMgB)
-
+3. [week2-python-3numpy-pandas](https://www.jianguoyun.com/p/DZZRryIQ6LTJBxix9skB)
 
 #### Reference 复习材料 (基础材料必看，进阶材料选看）
 | # |- | 材料 | 备注 |

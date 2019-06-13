@@ -28,6 +28,7 @@
 1. [week1-intro-1plan](https://www.jianguoyun.com/p/DTY9Z_UQ1YDIBxjo-sUB)
 2. [week1-intro-2github](https://www.jianguoyun.com/p/DcKtjrEQ1YDIBxjn-sUB)
 3. [week1-intro-3jupyter](https://www.jianguoyun.com/p/De9RMscQ1YDIBxji-sUB)
+4. [week1-答疑视频](https://www.jianguoyun.com/p/DR98c7YQ6LTJBxjymcgB)
 
 注册坚果云后下载
 
