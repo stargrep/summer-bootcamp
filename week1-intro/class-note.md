@@ -28,6 +28,7 @@
 1. [week1-intro-1plan](https://www.jianguoyun.com/p/DTY9Z_UQ1YDIBxjo-sUB)
 2. [week1-intro-2github](https://www.jianguoyun.com/p/DcKtjrEQ1YDIBxjn-sUB)
 3. [week1-intro-3jupyter](https://www.jianguoyun.com/p/De9RMscQ1YDIBxji-sUB)
+4. [week1-答疑视频](https://www.jianguoyun.com/p/DR98c7YQ6LTJBxjymcgB)
 
 注册坚果云后下载
 
@@ -93,3 +94,7 @@
 * 在觉得完成所有题目后，按照1.Github中使用过的方法向 stargrep/summer-bootcamp提交PR。
 * [注意：写一些测试，注意代码规范，每一行都要有注释，并且要让你的队友能看明白。]
 * [注意：我们会code review。]
+
+
+#### 作业答案
+homework/answers/..
