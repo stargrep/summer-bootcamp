@@ -1,7 +1,7 @@
 ## 课程笔记
 
 #### 上课视频
-1. [week3-database-and-design]()
+1. [week3-database-and-design](https://www.jianguoyun.com/p/DZL0Ey4Q1YDIBxji4s4B)
 2. [week3-data-visualization]()
 3. data-model-design-ppt (materials/data-modeling.ppt)
 
