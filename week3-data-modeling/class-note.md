@@ -2,7 +2,7 @@
 
 #### 上课视频
 1. [week3-database-and-design](https://www.jianguoyun.com/p/DZL0Ey4Q1YDIBxji4s4B)
-2. [week3-data-visualization]()
+2. [week3-data-visualization](https://www.jianguoyun.com/p/DYAWftIQ6LTJBxjfxswB)
 3. data-model-design-ppt (materials/data-modeling.ppt)
 4. matplotlib.ipynb/pandas-2-groupby_time_series.ipynb 下半部分课程材料
 
