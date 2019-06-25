@@ -4,7 +4,7 @@
 1. [week3-database-and-design](https://www.jianguoyun.com/p/DZL0Ey4Q1YDIBxji4s4B)
 2. [week3-data-visualization]()
 3. data-model-design-ppt (materials/data-modeling.ppt)
-
+4. matplotlib.ipynb/pandas-2-groupby_time_series.ipynb 下半部分课程材料
 
 #### Principle 3: Abstraction - the core of any design 
 
