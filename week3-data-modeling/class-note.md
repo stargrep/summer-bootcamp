@@ -28,7 +28,8 @@ https://www.pgadmin.org/
 
 #### 作业
 1. 数据库连接和操作
-* 使用自己的名字作为用户名(如 mike)登陆数据库名为名字+db(如 mikedb)，此时密码与用户名相同
+* 使用自己的名字作为用户名(如 mike)登陆数据库名为名字+db(如 mikedb)，此时密码为2019.
+  example: psql -h 104.198.59.118 -U weiliu -d weiliudb 
 * 使用上课讲述的数据类型(int, serial, varchar, json和timestamp)创建三个用外键关联的table
 * 在每个table中插入10条数据。
 * 修改table的一个column
