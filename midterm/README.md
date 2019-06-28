@@ -1,0 +1,2 @@
+大家请看midterm_question.ipynb的具体问题描述。
+写midterm的时候，首先参考answers/mike_example.ipynb建立自己的notebook, 把midterm_question复制过去，再进行答题。
