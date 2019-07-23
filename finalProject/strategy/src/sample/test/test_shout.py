@@ -1,4 +1,4 @@
-from src import sample
+from finalProject.strategy.src import sample
 
 
 def test_shout_and_repeat():
