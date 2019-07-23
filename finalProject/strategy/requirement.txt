@@ -1,0 +1,32 @@
+设计一个交易策略回测系统
+
+1. 项目要求
+(1) 完成数据添加数据库和数据读取模块
+(2) 根据数据层的设计，完成两个基本的策略指标
+(3) 设定交易的买卖执行，加入交易所费用百分比，计算盈利等指标
+(4) 添加主程序，运行部分执行过程，不需要每次从数据库拿到全部数据
+(5) 完成项目总结的 notebook
+
+
+2. 说明
+本项目中所有的代码要在 src 这个文件夹下面，本项目所有的notebook 都在 target 文件夹下面。
+注意数据库的query一定要关闭resource, 所有代码都要注释清楚。
+
+
+3. 步骤
+(1) 阅读 src/sample, 参考里面的代码格式
+
+(2) 依次根据 src/data, src/strategy, src/metrics, src/main 里面的注释，完成代码，运行测试。
+
+(3) data 文件的难点在于如何设计储存数据以及读取的格式。参考如下格式:
+
+(4) metrics 必须要计算 alpha, beta, equity gain (plot equity curve), sharpe ratio。
+
+(5) main 需要重复运算读取特定股票数据并且计算 metrics的结果。
+
+(6) notebook 要包含 数据描述, 主要数据结构(data folder), 策略的数学表达(metrics folder), 盈利和稳定性(metrics),
+最后作图把交易和盈利体现出来。
+
+
+4. 参考阅读
+https://blog.csdn.net/DreamcoffeeZS/article/details/80608439
