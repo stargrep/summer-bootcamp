@@ -1,0 +1,61 @@
+@startuml
+actor User1
+participant "Reading File \n Service"
+collections "Local CSV \n Files"
+database "Target Database" as DB
+
+User1 -> "Reading File \n Service" : manually run
+"Local CSV \n Files" <- "Reading File \n Service" : load files
+"Local CSV \n Files" [#blue]-> "Reading File \n Service" : return CSV files
+"Reading File \n Service" -> "Reading File \n Service" : process CSV Files, \n data transformation
+
+loop for each record
+    "Reading File \n Service" -> DB : save to database
+end
+
+@enduml
+
+
+
+@startuml
+
+participant "Scheduling Service" as ScheduleService
+participant "Reading File \n Service" as ReadService
+participant "Logging Service" as LogService
+
+database "Source Database" as SourceDB
+
+database "Target Database" as TargetDB
+
+ScheduleService -> ReadService : trigger service \n read from X time to Y time
+ReadService -> SourceDB : load new data
+ReadService -> ReadService : process source \n database record 
+|||
+loop for each record
+    ReadService -> TargetDB : save to database
+end
+|||
+ReadService -> LogService : add success records and timestamps
+
+
+@enduml
+
+
+@startuml
+
+participant "Upstream Service" as UpstreamService
+database "Source Database" as SourceDB
+participant "Reading File \n Service" as ReadService
+database "Target Database" as TargetDB
+participant "Downstream Service" as DownstreamService
+
+
+UpstreamService -> SourceDB : save a new record
+UpstreamService -> ReadService : event of upload \n new data record
+ReadService -> ReadService : process event metadata
+ReadService -> SourceDB : load new data
+ReadService -> ReadService : process source \n database record 
+ReadService -> TargetDB : save to database
+ReadService -> DownstreamService : publich an event with metadata
+
+@enduml
