@@ -27,6 +27,9 @@
 (6) notebook 要包含 数据描述, 主要数据结构(data folder), 策略的数学表达(metrics folder), 盈利和稳定性(metrics),
 最后作图把交易和盈利体现出来。
 
+4. 注意事项
+(1) 安装数据库连接库 pip install psycopg2-binary
+(2)
 
-4. 参考阅读
+5. 参考阅读
 https://blog.csdn.net/DreamcoffeeZS/article/details/80608439
