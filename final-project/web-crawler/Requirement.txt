@@ -1,0 +1,20 @@
+Requirement
+1. Download 100 Web Pages, and stop web crawler.
+2. Save Web Pages to your local folder. 
+3. You can start from python wiki(https://en.wikipedia.org/wiki/Python_(programming_language)), or any wiki page you like. It's easier because Wikipedia does not require login/sign in.
+
+
+Basic Module
+1. HTML Fetcher Module
+Use a full url as input, download text content from web page. 
+
+2. Extractor Module
+Use text content from web page as input, extract all url links. 
+
+3. URL Frontier Module
+Save url links from Extractor Module, remove the duplicate links.
+
+4. Duplicator Remover Module(optional)
+Check if the web page is accessed before. 
+
+
