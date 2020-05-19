@@ -1,0 +1,3 @@
+year=input("")
+y=int(year)
+y%4==0

@@ -1,0 +1,4 @@
+str=input("enter your string:")
+str1=str.split(' ')
+for i in str1[::-1]:
+    print(i,'',end='')
